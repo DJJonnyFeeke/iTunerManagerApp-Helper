@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Multi-Media</string>
+
+    <string name="title">Database Notes</string>
+    <string name="unique_id">Enter Unique-ID: </string>
+    <string name="name">Enter Note: </string>
+    <string name="type">Enter Category: </string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all">Delete All</string>
+    <string name="modify">Modify</string>
+    <string name="view">View</string>
+    <string name="view_all">View All</string>
+    <string name="show_info">About</string>
+
+    <string name="TrackID">ID</string>
+    <string name="TrackName">Name</string>
+    <string name="TrackArtist">Artist</string>
+    <string name="Genre">Genre</string>
+    <string name="Rating">Rating</string>
+    <string name="Time">Time</string>
+    <string name="Year">Year</string>
+
+    <string name="e_g_audio">e.g. Audio</string>
+    <string name="e_g_do_not_forget_to_download">e.g. Requires Record from Loaded Data: ID: 1254</string>
+    <string name="e_g_00001">e.g. JohnDoe-081 111 1111</string>
+
+    <string name="searchMessage">Enter Search Criteria: </string>
+    <string name="searchTextHint">Enter Search Text or Part-Of… </string>
+
+    <string name="dataCount">…load data to see count…</string>
+    <string name="dataRecordCount">.:|| %d Records Loaded ||:.</string>
+    <string name="multi_media_manager_mobile_splash">Multi-Media Manager Mobile</string>
+    <string name="createLocalDBString">CREATE TABLE IF NOT EXISTS mmdatabase(uniqueid VARCHAR,name VARCHAR,type VARCHAR);</string>
+    <string name="createLocalDBStringArtists">CREATE TABLE IF NOT EXISTS map_database(uniqueid VARCHAR,country VARCHAR,city VARCHAR,lat VARCHAR,long VARCHAR,artist VARCHAR);</string>
+
+    <string name="first_textview">Multi-Media Manager Mobile Tips</string>
+    <string name="second_textview">Notes:\n - Buttons: Add, Delete, Delete ALL,\nModify, View, View ALL\n - Editable Text: Enter Unique-ID, Enter Note,\nEnter Category and their Text Entries</string>
+    <string name="third_textview">Data:\n - Buttons: Load Data\n - Display: The List View</string>
+    <string name="fourth_textview">Tools:\n - Search Icon: Search the \'LOAD DATA\' Database\n - Delete Icon: Clear Cache and App Data\n (p.s. Does not Delete the \'LOAD DATA\' Database)</string>
+    <string name="fifth_textview"> - About Button: Developer Information"</string>
+    <string name="next">Next Tip</string>
+    <string name="close">Close Tips</string>
+    <string name="view_1">View 1</string>
+    <string name="view_2">View 2</string>
+    <string name="view_3">View 3</string>
+    <string name="view_4">View 4</string>
+    <string name="view_5">View 5</string>
+
+    <string name="map_title">Multi-Media Manager Map</string>
+    <string name="multi_media_manager_helper">Multi-Media Manager Helper</string>
+    <string name="user_location_permission_not_granted">Location Permission Denied</string>
+    <string name="user_location_permission_explanation">Allow Multi-Media Manager Map to Access your Devices Location</string>
+    <string name="draw_marker_options_title">Multi-Media Manager Map :: created by JDFeeke</string>
+    <string name="draw_marker_options_snippet">Welcome to the Music Mapping World!</string>
+    <string name="SelectAllDataForNotes">SELECT * FROM mmdatabase</string>
+    <string name="SelectAllDataForMap">SELECT * FROM map_database</string>
+    <string name="searching_for_artists_to_display_on_a_map">…searching for Artists to display on the Map…</string>
+    <string name="mapping_options">Multi-Media Mapping Options</string>
+    <string name="processing">…processing…</string>
+    <string name="multi_media_manager_mobile">Multi-Media Manager Mobile</string>
+    <string name="busy_counter">checking %d of %d</string>
+    <string name="loader_database">…loading Database</string>
+    <string name="loading_map">…loading Map</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_border"
+    android:orientation="horizontal">
+    <!--  Column 1 header -->
+    <TextView
+        android:id="@+id/column1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 2 header -->
+    <TextView
+        android:id="@+id/column2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 3 header -->
+    <TextView
+        android:id="@+id/column3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 4 header -->
+    <TextView
+        android:id="@+id/column4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 5 header -->
+    <TextView
+        android:id="@+id/column5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 6 header -->
+    <TextView
+        android:id="@+id/column6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!--  Column 7 header -->
+    <TextView
+        android:id="@+id/column7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

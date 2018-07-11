@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:stretchColumns="0"
+    android:background="@drawable/tile_background"
+    >
+
+    <TextView
+        android:id="@+id/CopyRightNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:text="@string/copyright_notice"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CopyRightNotice" />
+
+    <TextView
+        android:id="@+id/textViewUniqueID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/unique_id"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editUniqueIDDropDown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:hint="@string/e_g_00001"
+        android:inputType="text"
+        android:labelFor="@id/editUniqueIDDropDown"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUniqueID"
+        app:layout_constraintLeft_toRightOf="@+id/textViewUniqueID"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill"
+        android:padding="2dp"
+        android:text="@string/name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUniqueID" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:hint="@string/e_g_do_not_forget_to_download"
+        android:inputType="text"
+        android:labelFor="@id/editName"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUniqueID" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="fill"
+        android:padding="2dp"
+        android:text="@string/type"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:hint="@string/e_g_audio"
+        android:inputType="text"
+        android:labelFor="@id/editType"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewType"
+        app:layout_constraintLeft_toRightOf="@+id/textViewType"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/add"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/delete"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <Button
+        android:id="@+id/btnClearCache"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDeleteAll"
+        app:layout_constraintLeft_toRightOf="@+id/btnDelete"
+        app:layout_constraintRight_toLeftOf="@+id/btnDeleteAll"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/delete_all"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintRight_toLeftOf="@+id/btnModify"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <Button
+        android:id="@+id/btnModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/modify"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/view"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/view_all"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toRightOf="@+id/btnView"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toTopOf="@+id/progressbar"
+        app:layout_constraintLeft_toRightOf="@+id/btnViewAll"
+        app:layout_constraintRight_toLeftOf="@+id/btnShowInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteAll" />
+
+    <Button
+        android:id="@+id/btnShowInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_border"
+        android:text="@string/show_info"
+        app:layout_constraintRight_toLeftOf="@+id/btnLoadData"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnLoadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/data_border"
+        android:text="@string/data_loader"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/common_border"
+        android:clickable="false"
+        android:elevation="24dp"
+        android:fadingEdge="horizontal|vertical"
+        android:indeterminate="false"
+        android:indeterminateTint="@android:color/holo_blue_dark"
+        android:max="100"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewAll" />
+
+    <TextView
+        android:id="@+id/textViewDataCount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/data_border"
+        android:elevation="24dp"
+        android:text="@string/dataCount"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dividerLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dividerLine" />
+
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"
+        android:background="@drawable/data_border"
+        android:elevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_border"
+        android:backgroundTint="@color/colorAccent"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerLine">
+        <!--  Column 1 header -->
+        <TextView
+            android:id="@+id/column_header1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 2 header -->
+        <TextView
+            android:id="@+id/column_header2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 3 header -->
+        <TextView
+            android:id="@+id/column_header3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 4 header -->
+        <TextView
+            android:id="@+id/column_header4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 5 header -->
+        <TextView
+            android:id="@+id/column_header5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 6 header -->
+        <TextView
+            android:id="@+id/column_header6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <!--  Column 7 header -->
+        <TextView
+            android:id="@+id/column_header7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/common_border"
+        android:scrollIndicators="right"
+        android:scrollbars="horizontal|vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerLine" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/loader"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/loading"
+        android:elevation="22dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerLine" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/wait"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/wait"
+        android:elevation="22dp"
+        android:fadingEdge="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerLine" />
+
+</android.support.constraint.ConstraintLayout>
